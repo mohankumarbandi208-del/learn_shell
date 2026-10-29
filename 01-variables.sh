@@ -1,4 +1,6 @@
 #!/bin/bash
+echo "============================================================================================"
+echo " "
 echo "All passing arguments                                 :   ${@}"
 echo "pass all arguments as word                            :   $*"
 echo "Number of arguments                                   :   ${#}"
