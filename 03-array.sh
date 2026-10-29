@@ -1,3 +1,3 @@
 #!/bin/bash
 Fruits=("apple" "Banana" "Papaya")
-echo "All Fruits = ${Fruits[@]}
+echo "All Fruits = ${Fruits[@]}"
