@@ -2,3 +2,4 @@
 Fruits=("apple" "Banana" "Papaya")
 echo "All Fruits = ${Fruits[@]}"
 echo "First fruit is ${Fruits[0]}"
+echo "Last Fruit is ${Fruits[-1]}"
