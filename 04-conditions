@@ -1,0 +1,18 @@
+#!/bin/bash
+# for below 35 is fail
+#35 to 50 is third class
+#51 to 75 is second class
+#75 to 100 is first class
+
+read -p "Enter the marks for 100 : " marks # Asing user to input the marks for 100
+
+if [$marks -lt 35]; then    # -lt means Less than
+    echo "Failed"
+elif [$marks -lt 50]; then
+    echo "Third class"
+elif [$marks -lt 75]; then
+    echo "Second class"
+elif [$marks -le 100]; then  #  -le means Less than or equal to
+    echo "First Class"
+else
+    echo "Enter the correct marks"
