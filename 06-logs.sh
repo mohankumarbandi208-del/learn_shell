@@ -17,10 +17,10 @@ mkdir -p ${logs_folder}
 #checking Function
 validate(){
     if [ $? -ne 0 ]; then
-        echo "${1} Installation Failed" | tee -a $logs_file
+        echo "${2} Installation Failed" | tee -a $logs_file #${2} means argument
         exit 1
     else
-        echo "${1} installation Success" | tee -a $logs_file
+        echo "${2} installation Success" | tee -a $logs_file #${2} means argument
     fi
 }
 
