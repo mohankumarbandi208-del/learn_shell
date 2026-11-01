@@ -14,6 +14,9 @@ fi
 #create logs folder
 mkdir -p ${logs_folder}
 
+#script starting date and time collectiom
+echo "Script starting date $(date +"%F %T")" | tee -a $logs_file
+
 #checking Function
 validate(){
     if [ $? -ne 0 ]; then
@@ -32,4 +35,5 @@ validate $? "Nginx"
 dnf install mysql -y &>> $logs_file
 validate $? "Mysql"
 
+echo "Script Ending date $(date +"%F %T")" | tee -a $logs_file
 
