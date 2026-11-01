@@ -17,10 +17,10 @@ mkdir -p ${logs_folder}
 #checking Function
 validate(){
     if [ $? -ne 0 ]; then
-        echo "${1} Installation Failed" | tee -a $log_file
+        echo "${1} Installation Failed" | tee -a $logs_file
         exit 1
     else
-        echo "${1} installation Success" | tee -a $log_file
+        echo "${1} installation Success" | tee -a $logs_file
     fi
 }
 
@@ -29,7 +29,7 @@ dnf install nginx -y &>> $logs_file
 validate $? "Nginx"
 
 #install mysql
-dnf install mysql -y &>> $log_file
+dnf install mysql -y &>> $logs_file
 validate $? "Mysql"
 
 
