@@ -9,7 +9,7 @@ fi
 
 #install nginx
 dnf install nginx -y
-if [$? -ne 0]; then
+if [ $? -ne 0 ]; then
     echo "Nginx failed......"
     exit 1
 else
@@ -18,7 +18,7 @@ fi
 
 #install mysql
 dnf install mysql -y
-if [$? -ne 0]; then
+if [ $? -ne 0 ]; then
     echo "mysql installation failed"
     exit 1
 else
